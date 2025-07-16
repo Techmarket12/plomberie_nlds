@@ -2,7 +2,8 @@ import { ImageResponse } from "next/og"
 
 export const runtime = "edge"
 
-export const alt = "Débouchage Plomberie Service 24 - Services professionnels de plomberie et débouchage"
+// Attribut alt de l'image pour l'accessibilité et le SEO
+export const alt = "Ontstoppings- en Loodgietersdienst 24 - Professionele loodgieters- en ontstoppingsdiensten"
 export const size = {
   width: 1200,
   height: 630,
@@ -50,11 +51,12 @@ export default async function Image() {
             />
           </svg>
         </div>
-        <div style={{ fontWeight: "bold", fontSize: "52px" }}>Débouchage Plomberie</div>
+        {/* Texte affiché sur l'image Open Graph */}
+        <div style={{ fontWeight: "bold", fontSize: "52px" }}>Ontstoppings- Loodgietersdienst</div>
       </div>
       <div style={{ fontSize: "40px", marginBottom: "20px" }}>SERVICE 24</div>
       <div style={{ fontSize: "28px", opacity: 0.9, textAlign: "center", maxWidth: "80%" }}>
-        Intervention rapide en 45 minutes • Disponible 24h/24 et 7j/7
+        Snelle interventie binnen 45 minuten • Beschikbaar 24/7
       </div>
     </div>,
     { ...size },
