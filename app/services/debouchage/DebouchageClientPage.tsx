@@ -8,20 +8,20 @@ import ServiceSchema from "@/components/service-schema"
 
 const services = [
   {
-    title: "Débouchage WC et Éviers",
-    description: "Débouchage rapide et efficace de vos WC, éviers et autres installations sanitaires bouchées.",
+    title: "WC en Afvoer Ontstopping", // Traduction
+    description: "Snelle en efficiënte ontstopping van uw toiletten, gootstenen en andere verstopte sanitaire installaties.", // Traduction
     link: "/services/debouchage/wc-eviers",
   },
   {
-    title: "Débouchage Canalisations",
+    title: "Leidingontstopping", // Traduction
     description:
-      "Débouchage professionnel de toutes canalisations extérieures et intérieures avec équipement spécialisé.",
+      "Professionele ontstopping van alle buiten- en binnenleidingen met gespecialiseerde apparatuur.", // Traduction
     link: "/services/debouchage/canalisations",
   },
   {
-    title: "Inspection Caméra",
+    title: "Camera-inspectie", // Traduction
     description:
-      "Inspection vidéo des canalisations pour identifier avec précision la cause et l'emplacement des problèmes.",
+      "Video-inspectie van leidingen om de oorzaak en locatie van problemen nauwkeurig te identificeren.", // Traduction
     link: "/services/debouchage/inspection-camera",
   },
 ]
@@ -33,17 +33,16 @@ export default function DebouchageClientPage() {
       <section className="relative pt-16 md:pt-20 bg-[#111827] text-white">
         {/* Message promotionnel en haut à droite */}
         <div className="absolute right-4 top-4 z-10 rounded-md bg-yellow-100 p-2 text-center text-xs font-medium text-gray-900 shadow-md md:right-8 md:top-6 md:text-sm md:p-3">
-          Prix mini, Service rapide : <span className="text-red-600 font-bold">10%</span> de réduction en plus
-          aujourd'hui seulement.
+          Mini prijzen, Snelle service: <span className="text-red-600 font-bold">10%</span> extra korting alleen vandaag. {/* Traduction */}
         </div>
         <div className="container mx-auto px-4 py-16 sm:py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* Colonne de texte */}
             <div className="text-center md:text-left">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Services de Débouchage Professionnels</h1>
+              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Professionele Ontstoppingsdiensten</h1> {/* Traduction */}
               <p className="mt-6 text-sm text-gray-300">
-                Solutions rapides et efficaces pour tous vos problèmes de canalisations bouchées. Intervention en moins
-                de 45 minutes, disponible 24h/24 et 7j/7.
+                Snelle en effectieve oplossingen voor al uw verstopte leidingproblemen. Interventie in minder dan
+                45 minuten, 24/7 beschikbaar. {/* Traduction */}
               </p>
 
               {/* Texte incitatif avant le bouton d'appel */}
@@ -64,10 +63,10 @@ export default function DebouchageClientPage() {
                     />
                   </svg>
                   <div className="text-xs leading-tight">
-                    <h3 className="text-sm font-bold leading-tight">Urgence canalisation bouchée ?</h3>
+                    <h3 className="text-sm font-bold leading-tight">Noodgeval verstopte leiding?</h3> {/* Traduction */}
                     <p className="mt-0.5">
                       <span className="block font-bold mt-0.5">
-                        Appelez maintenant pour une intervention en 45 minutes ou moins.
+                        Bel nu voor een interventie binnen 45 minuten of minder. {/* Traduction */}
                       </span>
                     </p>
                   </div>
@@ -85,7 +84,7 @@ export default function DebouchageClientPage() {
                     }
                   }}
                 >
-                  <Link href="tel:+32493415283">Appeler aujourd'hui</Link>
+                  <Link href="tel:+32493415283">Vandaag bellen</Link> {/* Traduction */}
                 </Button>
                 <Button
                   size="lg"
@@ -93,7 +92,7 @@ export default function DebouchageClientPage() {
                   asChild
                   className="border-blue-400 text-blue-400 hover:bg-blue-400/10"
                 >
-                  <Link href="/contact">Demander un Devis</Link>
+                  <Link href="/contact">Vraag een offerte aan</Link> {/* Traduction */}
                 </Button>
               </div>
             </div>
@@ -102,7 +101,7 @@ export default function DebouchageClientPage() {
             <div className="relative h-64 md:h-full rounded-lg overflow-hidden shadow-xl">
               <Image
                 src="/images/debouchage-toilette-ventouse.jpg"
-                alt="Dépannage sanitaires et débouchage professionnel"
+                alt="Sanitaire nooddienst en professionele ontstopping" // Traduction
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover rounded-lg"
@@ -117,9 +116,9 @@ export default function DebouchageClientPage() {
       <section className="bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-800 sm:text-4xl">Nos Services de Débouchage</h2>
+            <h2 className="text-3xl font-bold text-gray-800 sm:text-4xl">Onze Ontstoppingsdiensten</h2> {/* Traduction */}
             <p className="mt-4 text-xl text-gray-600">
-              Solutions professionnelles pour tous types de canalisations bouchées
+              Professionele oplossingen voor alle soorten verstopte leidingen {/* Traduction */}
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
@@ -128,7 +127,7 @@ export default function DebouchageClientPage() {
                 <h3 className="mb-3 text-xl font-bold text-gray-800">{service.title}</h3>
                 <p className="mb-6 text-gray-600">{service.description}</p>
                 <Button className="w-full bg-blue-500 hover:bg-blue-600" asChild>
-                  <Link href={service.link}>En savoir plus</Link>
+                  <Link href={service.link}>Meer informatie</Link> {/* Traduction */}
                 </Button>
               </div>
             ))}
@@ -141,10 +140,10 @@ export default function DebouchageClientPage() {
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-gray-800 sm:text-4xl">
-              Pourquoi Choisir Notre Service de Débouchage
-            </h2>
+              Waarom Kiezen voor Onze Ontstoppingsdienst
+            </h2> {/* Traduction */}
             <p className="mt-4 text-xl text-gray-600">
-              Des solutions rapides, efficaces et durables pour tous vos problèmes de canalisations
+              Snelle, efficiënte en duurzame oplossingen voor al uw leidingproblemen {/* Traduction */}
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -165,10 +164,9 @@ export default function DebouchageClientPage() {
                   />
                 </svg>
               </div>
-              <h3 className="mb-3 text-xl font-bold text-gray-800">Intervention Rapide</h3>
+              <h3 className="mb-3 text-xl font-bold text-gray-800">Snelle Interventie</h3> {/* Traduction */}
               <p className="text-gray-600">
-                Nos techniciens interviennent en moins de 45 minutes pour résoudre rapidement vos problèmes de
-                canalisations bouchées.
+                Onze technici interveniëren binnen 45 minuten om uw verstopte leidingproblemen snel op te lossen. {/* Traduction */}
               </p>
             </div>
             <div className="rounded-lg bg-white p-6 shadow-md">
@@ -188,10 +186,9 @@ export default function DebouchageClientPage() {
                   />
                 </svg>
               </div>
-              <h3 className="mb-3 text-xl font-bold text-gray-800">Équipement Spécialisé</h3>
+              <h3 className="mb-3 text-xl font-bold text-gray-800">Gespecialiseerde Apparatuur</h3> {/* Traduction */}
               <p className="text-gray-600">
-                Nous utilisons des équipements professionnels de pointe pour déboucher efficacement tous types de
-                canalisations.
+                Wij gebruiken professionele, geavanceerde apparatuur om alle soorten leidingen efficiënt te ontstoppen. {/* Traduction */}
               </p>
             </div>
             <div className="rounded-lg bg-white p-6 shadow-md">
@@ -211,10 +208,9 @@ export default function DebouchageClientPage() {
                   />
                 </svg>
               </div>
-              <h3 className="mb-3 text-xl font-bold text-gray-800">Garantie de Satisfaction</h3>
+              <h3 className="mb-3 text-xl font-bold text-gray-800">Tevredenheidsgarantie</h3> {/* Traduction */}
               <p className="text-gray-600">
-                Nous garantissons un service de qualité et des solutions durables pour tous vos problèmes de
-                canalisations.
+                Wij garanderen een kwaliteitsservice en duurzame oplossingen voor al uw leidingproblemen. {/* Traduction */}
               </p>
             </div>
           </div>
@@ -225,37 +221,37 @@ export default function DebouchageClientPage() {
       <section className="bg-white py-12">
         <div className="container mx-auto px-4">
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-bold text-gray-800">Nos Services de Débouchage Complets</h2>
+            <h2 className="text-3xl font-bold text-gray-800">Onze Complete Ontstoppingsdiensten</h2> {/* Traduction */}
             <p className="mt-4 text-gray-600">
-              Nous proposons une gamme complète de services de débouchage pour répondre à tous vos besoins
+              Wij bieden een volledig scala aan ontstoppingsdiensten om aan al uw behoeften te voldoen {/* Traduction */}
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {[
-              "Débouchage curatif canalisation",
-              "Débouchage préventif canalisation",
-              "Débouchage domestique",
-              "Débouchage industriel",
-              "Débouchage canalisation Bruxelles",
-              "Débouchage haute pression",
-              "Nettoyage haute pression canalisation",
-              "Entretien canalisation",
-              "Inspection vidéo des égouts",
-              "Vidange fosse septique",
-              "Réparation de canalisation",
-              "Débouchage évier",
-              "Débouchage égouts",
-              "Débouchage cuisine",
-              "Débouchage salle de bain",
-              "Débouchage WC",
-              "Débouchage douche",
-              "Débouchage baignoire",
-              "Débouchage tuyaux",
-              "Débouchage canalisation bouchée",
-              "Débouchage urgent 24/7",
-              "Débouchage siphon",
-              "Débouchage fosse septique",
-              "Débouchage citerne d'eau de pluie",
+              "Curatieve leidingontstopping", // Traduction
+              "Preventieve leidingontstopping", // Traduction
+              "Huishoudelijke ontstopping", // Traduction
+              "Industriële ontstopping", // Traduction
+              "Leidingontstopping Brussel", // Traduction
+              "Hogedrukontstopping", // Traduction
+              "Hogedrukreiniging leidingen", // Traduction
+              "Leidingonderhoud", // Traduction
+              "Video-inspectie riolering", // Traduction
+              "Ledigen septic tank", // Traduction
+              "Leidingreparatie", // Traduction
+              "Gootsteen ontstopping", // Traduction
+              "Riolering ontstopping", // Traduction
+              "Keuken ontstopping", // Traduction
+              "Badkamer ontstopping", // Traduction
+              "WC ontstopping", // Traduction
+              "Douche ontstopping", // Traduction
+              "Badkuip ontstopping", // Traduction
+              "Pijpontstopping", // Traduction
+              "Verstopte leiding ontstopping", // Traduction
+              "Spoedontstopping 24/7", // Traduction
+              "Sifon ontstopping", // Traduction
+              "Septic tank ontstopping", // Traduction
+              "Regenwaterput ontstopping", // Traduction
             ].map((service, index) => (
               <div
                 key={index}
@@ -272,37 +268,37 @@ export default function DebouchageClientPage() {
       <section className="bg-gray-50 py-12">
         <div className="container mx-auto px-4">
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-bold text-gray-800">Solutions pour Tous Types de Clients</h2>
+            <h2 className="text-3xl font-bold text-gray-800">Oplossingen voor Alle Soorten Klanten</h2> {/* Traduction */}
             <p className="mt-4 text-gray-600">
-              Nos services de débouchage s'adaptent à tous les secteurs et types de bâtiments
+              Onze ontstoppingsdiensten zijn geschikt voor alle sectoren en soorten gebouwen {/* Traduction */}
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-lg bg-white p-5 shadow-md">
-              <h3 className="mb-3 text-xl font-bold text-blue-600">Résidentiel</h3>
+              <h3 className="mb-3 text-xl font-bold text-blue-600">Residentieel</h3> {/* Traduction */}
               <ul className="space-y-2 text-gray-700">
-                <li>• Maisons individuelles</li>
-                <li>• Appartements</li>
-                <li>• Immeubles résidentiels</li>
-                <li>• Copropriétés</li>
+                <li>• Eengezinswoningen</li> {/* Traduction */}
+                <li>• Appartementen</li> {/* Traduction */}
+                <li>• Woongebouwen</li> {/* Traduction */}
+                <li>• Verenigingen van mede-eigenaars</li> {/* Traduction */}
               </ul>
             </div>
             <div className="rounded-lg bg-white p-5 shadow-md">
-              <h3 className="mb-3 text-xl font-bold text-blue-600">Commercial</h3>
+              <h3 className="mb-3 text-xl font-bold text-blue-600">Commercieel</h3> {/* Traduction */}
               <ul className="space-y-2 text-gray-700">
-                <li>• Restaurants</li>
-                <li>• Hôtels</li>
-                <li>• Bureaux</li>
-                <li>• Centres commerciaux</li>
+                <li>• Restaurants</li> {/* Traduction */}
+                <li>• Hotels</li> {/* Traduction */}
+                <li>• Kantoren</li> {/* Traduction */}
+                <li>• Winkelcentra</li> {/* Traduction */}
               </ul>
             </div>
             <div className="rounded-lg bg-white p-5 shadow-md">
-              <h3 className="mb-3 text-xl font-bold text-blue-600">Industriel</h3>
+              <h3 className="mb-3 text-xl font-bold text-blue-600">Industrieel</h3> {/* Traduction */}
               <ul className="space-y-2 text-gray-700">
-                <li>• Usines</li>
-                <li>• Entrepôts</li>
-                <li>• Bâtiments industriels</li>
-                <li>• Stations de pompage</li>
+                <li>• Fabrieken</li> {/* Traduction */}
+                <li>• Magazijnen</li> {/* Traduction */}
+                <li>• Industriële gebouwen</li> {/* Traduction */}
+                <li>• Pompstations</li> {/* Traduction */}
               </ul>
             </div>
           </div>
@@ -314,8 +310,8 @@ export default function DebouchageClientPage() {
 
       {/* Schema.org markup */}
       <ServiceSchema
-        name="Services de Débouchage de Canalisations"
-        description="Services professionnels de débouchage de canalisations, WC, éviers et douches. Intervention rapide 24/7, équipement spécialisé et garantie de satisfaction."
+        name="Diensten voor Leidingontstopping" // Traduction
+        description="Professionele ontstoppingsdiensten voor leidingen, toiletten, gootstenen en douches. Snelle interventie 24/7, gespecialiseerde apparatuur en tevredenheidsgarantie." // Traduction
         url="https://www.debouchage-plomberie-service24.be/services/debouchage"
         image="/images/debouchage-canalisations-hero.png"
       />
