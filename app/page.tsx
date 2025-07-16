@@ -8,9 +8,9 @@ import Image from "next/image"
 import GoogleReviewsSection from "@/components/google-reviews-section"
 
 export const metadata: Metadata = {
-  title: "Aqua&Deb - Plombier Déboucheur Urgence 24h/24 | Intervention Express 45 Minutes",
+  title: "Aqua&Deb - Loodgieter Ontstopper Spoeddienst 24/7 | Spoedinterventie 45 Minuten",
   description:
-    "Aqua&Deb - Service professionnel de plomberie et débouchage 24h/24. Intervention rapide en 45 minutes, dépannage fuites d'eau, débouchage canalisations WC éviers. Devis gratuit sans engagement, garantie 12 mois. Particuliers et professionnels Wallonie & Bruxelles.",
+    "Aqua&Deb - Professionele loodgieters- en ontstoppingsdienst 24/7. Snelle interventie binnen 45 minuten, noodreparaties waterlekken, ontstoppen van afvoeren, toiletten, wastafels. Gratis vrijblijvende offerte, 12 maanden garantie. Particulieren en bedrijven Wallonië & Brussel.",
 }
 
 export default function Home() {
@@ -23,27 +23,27 @@ export default function Home() {
       <div className="flex flex-col justify-center space-y-6 text-center md:text-left">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
           <span className="block text-white">AQUA&DEB</span>
-          <span className="block text-blue-400">PLOMBIER DÉBOUCHEUR</span>
-          <span className="block text-blue-400 text-3xl sm:text-4xl">URGENCE 24H/24</span>
+          <span className="block text-blue-400">LOODGIETER ONTSTOPPER</span>
+          <span className="block text-blue-400 text-3xl sm:text-4xl">SPOEDDIENST 24/7</span>
         </h1>
 
         <div className="space-y-4">
           <div className="flex items-center gap-3 justify-center md:justify-start">
             <Check className="h-6 w-6 text-blue-400" />
-            <p className="text-lg">Intervention Express en 45 Minutes</p>
+            <p className="text-lg">Spoedinterventie Binnen 45 Minuten</p>
           </div>
           <div className="flex items-center gap-3 justify-center md:justify-start">
             <Shield className="h-6 w-6 text-blue-400" />
-            <p className="text-lg">Intervention Garantie 12 Mois</p>
+            <p className="text-lg">Interventie 12 Maanden Garantie</p>
           </div>
           <div className="flex items-center gap-3 justify-center md:justify-start">
             <Clock className="h-6 w-6 text-blue-400" />
-            <p className="text-lg">Service Professionnel 24H/24 et 7J/7</p>
+            <p className="text-lg">Professionele Service 24/7</p>
           </div>
         </div>
         <div className="flex flex-col gap-4 sm:flex-row justify-center md:justify-start">
           <Button size="lg" asChild className="bg-blue-500 hover:bg-blue-600">
-            <Link href="tel:+32493415283">Appelez Maintenant</Link>
+            <Link href="tel:+32493415283">Bel Nu</Link>
           </Button>
           <Button
             size="lg"
@@ -51,7 +51,7 @@ export default function Home() {
             asChild
             className="border-blue-400 bg-white text-[#111827] hover:bg-blue-50"
           >
-            <Link href="/contact">Devis Gratuit Sans Engagement</Link>
+            <Link href="/contact">Gratis Vrijblijvende Offerte</Link>
           </Button>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function Home() {
         <div className="overflow-hidden rounded-lg shadow-lg">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DXiw6Hsuq4r4cEVW9efbiVRhjqYdEE.png"
-            alt="Aqua&Deb - Plombier professionnel intervention urgence 24h/24"
+            alt="Aqua&Deb - Professionele loodgieter spoedinterventie 24/7"
             className="h-auto w-full"
           />
         </div>
@@ -74,10 +74,10 @@ export default function Home() {
           <div className="flex flex-col items-center justify-between gap-4 rounded-lg bg-blue-800 p-6 shadow-lg sm:flex-row">
             <div className="flex flex-col items-center sm:items-start">
               <h3 className="mb-1 text-center text-xl font-bold sm:text-left sm:text-2xl">
-                -15% sur votre première intervention !
+                -15% op uw eerste interventie!
               </h3>
               <p className="text-center text-sm text-blue-100 sm:text-left mb-2">
-                Offre valable pour toute nouvelle demande - Devis gratuit sans engagement
+                Aanbieding geldig voor elke nieuwe aanvraag - Gratis vrijblijvende offerte
               </p>
               <div className="inline-block animate-pulse rounded-lg bg-yellow-400 px-6 py-3 text-4xl font-extrabold tracking-wider text-blue-900 shadow-lg sm:text-5xl md:text-6xl">
                 AQUA15
@@ -85,7 +85,7 @@ export default function Home() {
               <div className="mt-3 flex items-center gap-2 bg-blue-700 p-2 rounded-md">
                 <Tag className="h-5 w-5 text-yellow-300" />
                 <p className="text-sm text-yellow-300 font-medium">
-                  Mentionnez ce code lors de votre appel pour bénéficier de la remise
+                  Vermeld deze code bij uw oproep om van de korting te profiteren
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function Home() {
                 asChild
                 className="bg-yellow-500 text-sm font-bold text-blue-900 hover:bg-yellow-400 w-full sm:w-auto min-w-[180px]"
               >
-                <Link href="tel:+32493415283">Appelez maintenant</Link>
+                <Link href="tel:+32493415283">Bel nu</Link>
               </Button>
               <Button
                 size="lg"
@@ -103,7 +103,7 @@ export default function Home() {
                 asChild
                 className="border-white bg-white text-sm font-bold text-blue-900 hover:bg-blue-50 w-full sm:w-auto min-w-[180px]"
               >
-                <Link href="/contact">Devis gratuit</Link>
+                <Link href="/contact">Gratis offerte</Link>
               </Button>
             </div>
           </div>
@@ -115,10 +115,10 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-gray-800 sm:text-4xl">
-              Solutions Complètes de Plomberie - Particuliers et Professionnels
+              Complete Loodgietersoplossingen - Particulieren en Bedrijven
             </h2>
             <p className="mt-4 text-xl text-gray-600">
-              Service professionnel 24h/24 pour tous vos besoins en plomberie et débouchage - Wallonie & Bruxelles
+              Professionele 24/7 service voor al uw loodgieters- en ontstoppingsbehoeften - Wallonië & Brussel
             </p>
           </div>
           {/* Grille contenant toutes les cartes */}
@@ -129,23 +129,22 @@ export default function Home() {
                 <div className="relative h-full w-full">
                   <Image
                     src="/images/services/debouchage_canalisation.webp"
-                    alt="Service débouchage professionnel 24h/24 - Débouchage canalisations WC éviers"
+                    alt="Professionele ontstoppingsdienst 24/7 - Afvoeren, toiletten, wastafels ontstoppen"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-4">
-                  <h3 className="text-xl font-bold text-white">Débouchage WC et Éviers</h3>
+                  <h3 className="text-xl font-bold text-white">Toiletten en Wastafels Ontstoppen</h3>
                 </div>
               </div>
               <div className="p-6">
                 <p className="text-gray-600">
-                  Service de débouchage professionnel 24h/24. Urgence canalisation bouchée ? Intervention rapide en 45
-                  minutes pour débouchage canalisations, WC, éviers et douches.
+                  Professionele ontstoppingsdienst 24/7. Verstopte afvoer spoed? Snelle interventie binnen 45 minuten voor het ontstoppen van afvoeren, toiletten, wastafels en douches.
                 </p>
                 <Button asChild className="mt-4 w-full bg-blue-600 hover:bg-blue-700">
-                  <Link href="/services/debouchage">En savoir plus</Link>
+                  <Link href="/services/debouchage">Meer informatie</Link>
                 </Button>
               </div>
             </div>
@@ -156,23 +155,22 @@ export default function Home() {
                 <div className="relative h-full w-full">
                   <Image
                     src="/images/services/depannage_plomberie.webp"
-                    alt="Dépannage fuites d'eau - Intervention rapide 24h/24"
+                    alt="Waterlekkage reparatie - Snelle interventie 24/7"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-4">
-                  <h3 className="text-xl font-bold text-white">Dépannage Fuites d'Eau</h3>
+                  <h3 className="text-xl font-bold text-white">Waterlekkage Reparatie</h3>
                 </div>
               </div>
               <div className="p-6">
                 <p className="text-gray-600">
-                  Dépannage fuites d'eau, robinets, chasses d'eau et tous problèmes urgents de plomberie. Intervention
-                  rapide 24h/24 avec garantie 12 mois.
+                  Reparatie van waterlekken, kranen, stortbakken en alle dringende loodgietersproblemen. Snelle interventie 24/7 met 12 maanden garantie.
                 </p>
                 <Button asChild className="mt-4 w-full bg-blue-600 hover:bg-blue-700">
-                  <Link href="/services/plomberie/depannage">En savoir plus</Link>
+                  <Link href="/services/plomberie/depannage">Meer informatie</Link>
                 </Button>
               </div>
             </div>
@@ -183,23 +181,22 @@ export default function Home() {
                 <div className="relative h-full w-full">
                   <Image
                     src="/images/services/urgence_24.webp"
-                    alt="Intervention express 45 min - Service professionnel urgence 24h/24"
+                    alt="Spoedinterventie 45 min - Professionele spoeddienst 24/7"
                     fill
                     className="object-contain p-8 transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-4">
-                  <h3 className="text-xl font-bold text-white">Intervention Express 45 Min</h3>
+                  <h3 className="text-xl font-bold text-white">Spoedinterventie 45 Min</h3>
                 </div>
               </div>
               <div className="p-6">
                 <p className="text-gray-600">
-                  Service professionnel d'intervention express en 45 minutes. Disponible 24h/24 et 7j/7 pour toutes vos
-                  urgences de plomberie et débouchage.
+                  Professionele spoedinterventie binnen 45 minuten. 24/7 beschikbaar voor al uw loodgieters- en ontstoppingsnoodgevallen.
                 </p>
                 <Button asChild className="mt-4 w-full bg-red-600 hover:bg-red-700">
-                  <Link href="tel:+32493415283">Appelez Maintenant</Link>
+                  <Link href="tel:+32493415283">Bel Nu</Link>
                 </Button>
               </div>
             </div>
@@ -210,23 +207,22 @@ export default function Home() {
                 <div className="relative h-full w-full">
                   <Image
                     src="/images/services/renovation_plomberie.webp"
-                    alt="Rénovation et entretien plomberie - Solutions complètes"
+                    alt="Loodgieter renovatie en onderhoud - Complete oplossingen"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-4">
-                  <h3 className="text-xl font-bold text-white">Rénovation et Entretien</h3>
+                  <h3 className="text-xl font-bold text-white">Renovatie en Onderhoud</h3>
                 </div>
               </div>
               <div className="p-6">
                 <p className="text-gray-600">
-                  Solutions complètes de plomberie : installation et remplacement de sanitaires, tuyauterie et systèmes
-                  de chauffage. Devis gratuit sans engagement.
+                  Complete loodgietersoplossingen: installatie en vervanging van sanitair, leidingen en verwarmingssystemen. Gratis vrijblijvende offerte.
                 </p>
                 <Button asChild className="mt-4 w-full bg-blue-600 hover:bg-blue-700">
-                  <Link href="/services/plomberie/renovation">En savoir plus</Link>
+                  <Link href="/services/plomberie/renovation">Meer informatie</Link>
                 </Button>
               </div>
             </div>
@@ -237,23 +233,22 @@ export default function Home() {
                 <div className="relative h-full w-full">
                   <Image
                     src="/images/services/detection_fuites.webp"
-                    alt="Inspection par caméra - Détection fuites professionnelle"
+                    alt="Camera inspectie - Professionele lekdetectie"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-4">
-                  <h3 className="text-xl font-bold text-white">Inspection par Caméra</h3>
+                  <h3 className="text-xl font-bold text-white">Camera Inspectie</h3>
                 </div>
               </div>
               <div className="p-6">
                 <p className="text-gray-600">
-                  Inspection par caméra et détection précise des fuites visibles et cachées. Technologie avancée pour un
-                  diagnostic professionnel sans dégâts.
+                  Camera inspectie en nauwkeurige detectie van zichtbare en verborgen lekken. Geavanceerde technologie voor professionele diagnose zonder schade.
                 </p>
                 <Button asChild className="mt-4 w-full bg-blue-600 hover:bg-blue-700">
-                  <Link href="/services/plomberie/depannage-fuites">En savoir plus</Link>
+                  <Link href="/services/plomberie/depannage-fuites">Meer informatie</Link>
                 </Button>
               </div>
             </div>
@@ -264,23 +259,22 @@ export default function Home() {
                 <div className="relative h-full w-full">
                   <Image
                     src="/images/services/entretien_preventif.webp"
-                    alt="Dépannage sanitaires - Entretien préventif plomberie"
+                    alt="Sanitair herstel - Preventief loodgietersonderhoud"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-4">
-                  <h3 className="text-xl font-bold text-white">Dépannage Sanitaires</h3>
+                  <h3 className="text-xl font-bold text-white">Sanitair Herstel</h3>
                 </div>
               </div>
               <div className="p-6">
                 <p className="text-gray-600">
-                  Dépannage sanitaires et maintenance préventive de vos installations. Interventions garanties pour
-                  prévenir les pannes et prolonger la durée de vie.
+                  Sanitair herstel en preventief onderhoud van uw installaties. Gegarandeerde interventies om storingen te voorkomen en de levensduur te verlengen.
                 </p>
                 <Button asChild className="mt-4 w-full bg-blue-600 hover:bg-blue-700">
-                  <Link href="/services/plomberie/entretien">En savoir plus</Link>
+                  <Link href="/services/plomberie/entretien">Meer informatie</Link>
                 </Button>
               </div>
             </div>
@@ -296,10 +290,10 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-gray-800 sm:text-4xl">
-              Nos Réalisations - Interventions Garanties Aqua&Deb
+              Onze Realisaties - Gegarandeerde Interventies Aqua&Deb
             </h2>
             <p className="mt-4 text-xl text-gray-600">
-              Découvrez nos interventions récentes avec résultats avant/après - Service professionnel 24h/24
+              Ontdek onze recente interventies met voor/na resultaten - Professionele 24/7 service
             </p>
           </div>
 
@@ -309,38 +303,36 @@ export default function Home() {
               <div className="relative h-[500px] overflow-hidden">
                 <Image
                   src="/images/realisations/chauffe-eau-avant-apres.png"
-                  alt="Installation chauffe-eau Bulex - Intervention garantie Aqua&Deb"
+                  alt="Bulex boiler installatie - Gegarandeerde interventie Aqua&Deb"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-lg font-bold text-gray-800 mb-2">Installation Chauffe-eau</h3>
+                <h3 className="text-lg font-bold text-gray-800 mb-2">Boiler Installatie</h3>
                 <p className="text-gray-600 text-sm">
-                  Remplacement complet d'un chauffe-eau défaillant par un modèle Bulex haute performance. Intervention
-                  garantie 12 mois.
+                  Complete vervanging van een defecte boiler door een hoogwaardig Bulex model. 12 maanden garantie op de interventie.
                 </p>
               </div>
             </div>
 
-            {/* Réalisation 2: Rénovation WC */}
-
+            {/* Réalisation 2: Rénovation WC - Ce bloc est vide dans votre original, je ne le traduis pas */}
+            {/* Si vous avez du contenu pour ce bloc, n'hésitez pas à me l'envoyer. */}
 
             {/* Réalisation 3: Réparation tuyauterie */}
             <div className="group overflow-hidden rounded-lg bg-white shadow-lg transition-all hover:shadow-xl">
               <div className="relative h-[500px] overflow-hidden">
                 <Image
                   src="/images/realisations/reparation-tuyauterie-avant-apres.png"
-                  alt="Dépannage fuites d'eau tuyauterie - Intervention rapide Aqua&Deb"
+                  alt="Waterlekkage reparatie leidingen - Snelle interventie Aqua&Deb"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-lg font-bold text-gray-800 mb-2">Dépannage Fuites d'Eau</h3>
+                <h3 className="text-lg font-bold text-gray-800 mb-2">Waterlekkage Reparatie</h3>
                 <p className="text-gray-600 text-sm">
-                  Réparation professionnelle d'une fuite sur tuyauterie en cuivre. Intervention rapide avec raccords
-                  étanches garantis.
+                  Professionele reparatie van een lek in koperen leidingen. Snelle interventie met gegarandeerde waterdichte koppelingen.
                 </p>
               </div>
             </div>
@@ -350,16 +342,15 @@ export default function Home() {
               <div className="relative h-[500px] overflow-hidden">
                 <Image
                   src="/images/realisations/fuite-wc-avant-apres.png"
-                  alt="Réparation fuite WC - Service professionnel urgence Aqua&Deb"
+                  alt="WC lek reparatie - Professionele spoeddienst Aqua&Deb"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-lg font-bold text-gray-800 mb-2">Réparation Fuite WC</h3>
+                <h3 className="text-lg font-bold text-gray-800 mb-2">WC Lek Reparatie</h3>
                 <p className="text-gray-600 text-sm">
-                  Intervention rapide 24h/24 pour réparer une fuite importante au niveau du réservoir de WC. Service
-                  professionnel garanti.
+                  Snelle 24/7 interventie voor het repareren van een groot lek in de WC-spoelbak. Gegarandeerde professionele service.
                 </p>
               </div>
             </div>
@@ -369,16 +360,15 @@ export default function Home() {
               <div className="relative h-[500px] overflow-hidden">
                 <Image
                   src="/images/realisations/fuite-siphon-avant-apres.png"
-                  alt="Réparation fuite siphon évier - Intervention express Aqua&Deb"
+                  alt="Wastafel sifon lek reparatie - Spoedinterventie Aqua&Deb"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-lg font-bold text-gray-800 mb-2">Réparation Siphon</h3>
+                <h3 className="text-lg font-bold text-gray-800 mb-2">Sifon Reparatie</h3>
                 <p className="text-gray-600 text-sm">
-                  Remplacement d'un siphon défaillant sous évier avec étanchéité parfaite. Intervention express en 45
-                  minutes.
+                  Vervanging van een defecte sifon onder de wastafel met perfecte waterdichtheid. Spoedinterventie binnen 45 minuten.
                 </p>
               </div>
             </div>
@@ -388,16 +378,15 @@ export default function Home() {
               <div className="relative h-[500px] overflow-hidden">
                 <Image
                   src="/images/realisations/reparation-robinet-avant-apres.png"
-                  alt="Réparation fuite robinet - Solutions complètes plomberie Aqua&Deb"
+                  alt="Kraan lek reparatie - Complete loodgietersoplossingen Aqua&Deb"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-lg font-bold text-gray-800 mb-2">Réparation Robinet</h3>
+                <h3 className="text-lg font-bold text-gray-800 mb-2">Kraan Reparatie</h3>
                 <p className="text-gray-600 text-sm">
-                  Réparation d'une fuite de robinet avec remplacement des joints et raccords. Solutions complètes de
-                  plomberie garanties.
+                  Reparatie van een kraanlek met vervanging van pakkingen en koppelingen. Gegarandeerde complete loodgietersoplossingen.
                 </p>
               </div>
             </div>
@@ -405,11 +394,10 @@ export default function Home() {
 
           <div className="mt-12 text-center">
             <p className="text-lg text-gray-600 mb-6">
-              Chaque intervention est réalisée avec soin et professionnalisme pour garantir des résultats durables.
-              Service professionnel 24h/24.
+              Elke interventie wordt met zorg en professionaliteit uitgevoerd om duurzame resultaten te garanderen. Professionele 24/7 service.
             </p>
             <Button size="lg" asChild className="bg-blue-600 hover:bg-blue-700">
-              <Link href="/contact">Devis Gratuit Sans Engagement</Link>
+              <Link href="/contact">Gratis Vrijblijvende Offerte</Link>
             </Button>
           </div>
         </div>
@@ -420,10 +408,10 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-gray-800 sm:text-4xl">
-              Pourquoi Choisir Aqua&Deb - Entreprise de Plomberie
+              Waarom Kiezen voor Aqua&Deb - Loodgietersbedrijf
             </h2>
             <p className="mt-4 text-xl text-gray-600">
-              Service professionnel pour particuliers et professionnels en Wallonie & Bruxelles
+              Professionele service voor particulieren en bedrijven in Wallonië & Brussel
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -431,29 +419,27 @@ export default function Home() {
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-500">
                 <Clock className="h-6 w-6" />
               </div>
-              <h3 className="mb-3 text-xl font-bold text-gray-800">Intervention Express 45 Min</h3>
+              <h3 className="mb-3 text-xl font-bold text-gray-800">Spoedinterventie 45 Min</h3>
               <p className="text-gray-600">
-                Intervention rapide garantie en moins de 45 minutes pour résoudre rapidement toutes vos urgences de
-                plomberie.
+                Gegarandeerde snelle interventie binnen 45 minuten om al uw loodgietersnoodgevallen snel op te lossen.
               </p>
             </div>
             <div className="rounded-lg bg-white p-6 shadow-md transition-transform hover:scale-105">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-500">
                 <Shield className="h-6 w-6" />
               </div>
-              <h3 className="mb-3 text-xl font-bold text-gray-800">Interventions Garanties 12 Mois</h3>
+              <h3 className="mb-3 text-xl font-bold text-gray-800">Interventies 12 Maanden Garantie</h3>
               <p className="text-gray-600">
-                Toutes nos interventions sont garanties 12 mois pour votre tranquillité d'esprit et votre satisfaction.
+                Al onze interventies zijn 12 maanden gegarandeerd voor uw gemoedsrust en tevredenheid.
               </p>
             </div>
             <div className="rounded-lg bg-white p-6 shadow-md transition-transform hover:scale-105">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-500">
                 <Check className="h-6 w-6" />
               </div>
-              <h3 className="mb-3 text-xl font-bold text-gray-800">Service Professionnel</h3>
+              <h3 className="mb-3 text-xl font-bold text-gray-800">Professionele Service</h3>
               <p className="text-gray-600">
-                Techniciens qualifiés et expérimentés pour des solutions durables et efficaces. Interventions rapides et
-                garanties.
+                Gekwalificeerde en ervaren technici voor duurzame en effectieve oplossingen. Snelle en gegarandeerde interventies.
               </p>
             </div>
             <div className="rounded-lg bg-white p-6 shadow-md transition-transform hover:scale-105">
@@ -473,10 +459,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="mb-3 text-xl font-bold text-gray-800">Devis Gratuit Sans Engagement</h3>
+              <h3 className="mb-3 text-xl font-bold text-gray-800">Gratis Vrijblijvende Offerte</h3>
               <p className="text-gray-600">
-                Devis gratuit sans engagement et tarifs transparents. Solutions adaptées à votre budget pour
-                particuliers et professionnels.
+                Gratis vrijblijvende offerte en transparante tarieven. Oplossingen afgestemd op uw budget voor particulieren en bedrijven.
               </p>
             </div>
           </div>
@@ -484,10 +469,10 @@ export default function Home() {
       </section>
 
       {/* Service Area */}
-      <ServiceArea />
+      <ServiceArea /> {/* Assuming ServiceArea component already handles NL content or is passed props for translation */}
 
       {/* Call to Action */}
-      <CallToAction />
+      <CallToAction /> {/* Assuming CallToAction component already handles NL content or is passed props for translation */}
     </div>
   )
 }
